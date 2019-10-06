@@ -6,7 +6,7 @@ const fs = require('fs');
 exports.getUsers = function(start=1, limit=0, callback) {
 
   // using nodejs file system to read a datasource
-  // started reading the file content using a synchronised model which is not good for NodeJS.
+  // started reading the file content using a synchronous model which is not good for NodeJS.
   // replaced with an async version which demands callback
 
   // looks like now I will face what people call: callback hell
